@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:wedding_0/constant/app_colors.dart';
-import 'package:wedding_0/constant/fonts_styles.dart';
-import 'package:wedding_0/custom_widget/custom_elevated_button.dart';
-import 'package:wedding_0/custom_widget/custom_text_form_field.dart';
+import 'package:wedding_0/core/components/custom_check.dart';
+import 'package:wedding_0/core/components/custom_elevated_button.dart';
+import 'package:wedding_0/core/components/custom_text_form_field.dart';
+import 'package:wedding_0/core/utils/app_colors.dart';
+import 'package:wedding_0/core/utils/fonts_styles.dart';
+
 
 class RegisterScreen extends StatelessWidget {
   const RegisterScreen({super.key});
@@ -22,7 +24,7 @@ class RegisterScreen extends StatelessWidget {
           style: FontsStyles.bold32Black,
         ),
         centerTitle: true,
-        backgroundColor: AppColors.auth,
+        backgroundColor: AppColors.transparent,
       ),
       body: SingleChildScrollView(
         scrollDirection: Axis.vertical,
@@ -32,7 +34,6 @@ class RegisterScreen extends StatelessWidget {
               padding:
                   EdgeInsets.symmetric(horizontal: screen.width * (29 / 383)),
               child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   SizedBox(
                     height: screen.height * (25 / 778),
@@ -93,7 +94,15 @@ class RegisterScreen extends StatelessWidget {
                     fillColor: AppColors.white,
                   ),
                   SizedBox(
-                    height: screen.height * (196 / 778),
+                    height: screen.height * (33 / 778),
+                  ),
+                  CustomCheck(text: 'Couple', onClick: (){}, space: screen.width,filled: false,),
+                  SizedBox(
+                    height: screen.height * (33 / 778),
+                  ),
+                  CustomCheck(text: 'vendor', onClick: (){}, space: screen.width,filled: true,),
+                  SizedBox(
+                    height: screen.height * (33 / 778),
                   ),
                 ],
               ),

@@ -1,6 +1,6 @@
 
 import 'package:flutter/material.dart';
-import 'package:wedding_0/constant/app_colors.dart';
+import 'package:wedding_0/core/utils/app_colors.dart';
 
 class FontsStyles {
   static TextStyle regular20Black50 = TextStyle(

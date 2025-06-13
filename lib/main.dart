@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:wedding_0/Config/routes_names.dart';
 import 'package:wedding_0/login_screen.dart';
 import 'package:wedding_0/register_screen.dart';
-import 'package:wedding_0/routes_names.dart';
 
 void main() {
   runApp(const MyApp());

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:wedding_0/constant/app_colors.dart';
-import 'package:wedding_0/constant/fonts_styles.dart';
-import 'package:wedding_0/custom_widget/custom_elevated_button.dart';
-import 'package:wedding_0/custom_widget/custom_text_form_field.dart';
-import 'package:wedding_0/routes_names.dart';
+import 'package:wedding_0/core/components/custom_elevated_button.dart';
+import 'package:wedding_0/core/components/custom_text_form_field.dart';
+import 'package:wedding_0/core/utils/app_colors.dart';
+import 'package:wedding_0/core/utils/fonts_styles.dart';
+import 'package:wedding_0/Config/routes_names.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
@@ -19,7 +19,7 @@ class LoginScreen extends StatelessWidget {
           style: FontsStyles.bold32Black,
         ),
         centerTitle: true,
-        backgroundColor: AppColors.auth,
+        backgroundColor: AppColors.transparent,
       ),
       body: SingleChildScrollView(
         scrollDirection: Axis.vertical  ,
