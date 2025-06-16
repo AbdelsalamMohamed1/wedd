@@ -1,0 +1,35 @@
+class StringsInApp {
+  static String email='E-mail';
+  static String password='Password';
+  static String tasks='Tasks';
+  static String invitationAndGuestList='Invitation and guest list';
+  static String bankingOptions='Banking Options';
+  static String addOrChangePhotos='Add/Change Photos';
+  static String description='Description';
+  static String whatIsTheGuestCount='What is the guest count ?';
+  static String suggestedThemes='Suggested Themes';
+  static String botIntroduction='Hi I’m the assistant bot and i’m here to help you';
+  static String appIntroduction='Welcome to  Wedding Planner';
+  static String search='What are you looking for';
+  static String editInfo='Edit Info';
+  static String save='Save';
+  static String details='Details';
+  static String home='Home';
+  static String weddingHalls='Wedding Halls';
+  static String cakeProvider='Cake Provider';
+  static String done='Done';
+  static String register='Register';
+  static String registerWithGoogle='Register with Google';
+  static String login='Login';
+  static String loginWithGoogle='Login with Google';
+  static String dontHaveAnAccount="Don't have an account";
+  static String forgotThePassword='Forgot the password';
+  static String couple='Couple';
+  static String vendor='Vendor';
+  static String usernameOREmail='Username / E-mail';
+  static String firstName='First Name';
+  static String lastName='Last Name';
+  static String username='Username';
+  static String weddingCake='Wedding Cake';
+  static String reservations='Reservations';
+}

@@ -37,7 +37,7 @@ class CustomCheck extends StatelessWidget {
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(25),
                       border: Border.all(color: AppColors.black, width: 5),
-                      color: AppColors.gold),
+                      color: AppColors.ofWhite),
                 )
               : Container(
                   width: space * (44 / 383),

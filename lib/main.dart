@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:wedding_0/Config/routes_names.dart';
+import 'package:wedding_0/features/home/presentation/pages/home_screen.dart';
 import 'package:wedding_0/features/login/presentation/pages/login_screen.dart';
+import 'package:wedding_0/features/profile/presentation/pages/profile_screen.dart';
 import 'package:wedding_0/features/register/presentation/pages/register_screen.dart';
 
 void main() {
@@ -17,6 +19,9 @@ class MyApp extends StatelessWidget {
       routes: {
         RoutesNames.loginScreen:(context)=>LoginScreen(),
         RoutesNames.registerScreen:(context)=>RegisterScreen(),
+        RoutesNames.homeScreen:(context)=>HomeScreen(),
+        RoutesNames.profileScreen:(context)=>ProfileScreen(),
+
       },
       initialRoute: RoutesNames.loginScreen,
     );

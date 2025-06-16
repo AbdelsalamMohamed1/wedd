@@ -4,6 +4,7 @@ import 'package:wedding_0/core/components/custom_text_form_field.dart';
 import 'package:wedding_0/core/utils/app_colors.dart';
 import 'package:wedding_0/core/utils/fonts_styles.dart';
 import 'package:wedding_0/Config/routes_names.dart';
+import 'package:wedding_0/core/utils/strings_in_app.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
@@ -12,10 +13,10 @@ class LoginScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     var screen = MediaQuery.of(context).size;
     return Scaffold(
-      backgroundColor: AppColors.auth,
+      backgroundColor: AppColors.ofWhite,
       appBar: AppBar(
         title: Text(
-          'Login',
+          StringsInApp.login,
           style: FontsStyles.bold32Black,
         ),
         centerTitle: true,
@@ -35,7 +36,7 @@ class LoginScreen extends StatelessWidget {
                     height: screen.height * (57 / 778),
                   ),
                   CustomTextFormField(
-                    hintText: 'E-mail / UserName',
+                    hintText: StringsInApp.usernameOREmail,
                     hintStyle: FontsStyles.regular20Black50,
                     borderColor: AppColors.white,
                     filled: true,
@@ -45,7 +46,7 @@ class LoginScreen extends StatelessWidget {
                     height: screen.height * (45 / 778),
                   ),
                   CustomTextFormField(
-                    hintText: 'Password',
+                    hintText: StringsInApp.password,
                     hintStyle: FontsStyles.regular20Black50,
                     borderColor: AppColors.white,
                     filled: true,
@@ -55,9 +56,10 @@ class LoginScreen extends StatelessWidget {
                     height: screen.height * (9 / 778),
                   ),
                   GestureDetector(
-                    onTap: () {},
+                    onTap: () {
+                    },
                     child: Text(
-                      'Forgot Password ?',
+                      StringsInApp.forgotThePassword,
                       style: FontsStyles.regular12Black,
                     ),
                   ),
@@ -72,10 +74,12 @@ class LoginScreen extends StatelessWidget {
               child: Column(
                 children: [
                   CustomElevatedButton(
-                    onClick: () {},
+                    onClick: () {
+                      Navigator.pushReplacementNamed(context, RoutesNames.homeScreen);
+                    },
                     padding: screen.height * (12 / 778),
                     borderRadius: 500,
-                    text: 'Login',
+                    text: StringsInApp.login,
                     textStyle: FontsStyles.medium24White,
                     backgroundColor: AppColors.darkGray,
                     center: true,
@@ -85,10 +89,12 @@ class LoginScreen extends StatelessWidget {
                     height: screen.height * (25 / 778),
                   ),
                   CustomElevatedButton(
-                    onClick: () {},
+                    onClick: () {
+                      Navigator.pushReplacementNamed(context, RoutesNames.homeScreen);
+                    },
                     padding: screen.height * (12 / 778),
                     borderRadius: 500,
-                    text: 'Login With Google',
+                    text: StringsInApp.loginWithGoogle,
                     textStyle: FontsStyles.medium24White,
                     backgroundColor: AppColors.darkGray,
                     center: true,
@@ -98,7 +104,7 @@ class LoginScreen extends StatelessWidget {
                     height: screen.height * (30 / 778),
                   ),
                   Text(
-                    "Don't have an account?",
+                    StringsInApp.dontHaveAnAccount,
                     style: FontsStyles.regular12Black,
                   ),
                   GestureDetector(
@@ -106,7 +112,7 @@ class LoginScreen extends StatelessWidget {
                       Navigator.pushNamed(context, RoutesNames.registerScreen);
                       },
                     child: Text(
-                      'Register',
+                      StringsInApp.register,
                       style: FontsStyles.regular12Blue,
                     ),
                   )

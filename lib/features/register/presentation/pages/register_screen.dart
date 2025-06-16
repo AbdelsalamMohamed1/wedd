@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:wedding_0/core/components/custom_check.dart';
+import 'package:wedding_0/Config/routes_names.dart';
+import 'package:wedding_0/core/utils/strings_in_app.dart';
+import 'package:wedding_0/features/register/presentation/widgets/custom_check.dart';
 import 'package:wedding_0/core/components/custom_elevated_button.dart';
 import 'package:wedding_0/core/components/custom_text_form_field.dart';
 import 'package:wedding_0/core/utils/app_colors.dart';
@@ -13,14 +15,14 @@ class RegisterScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     var screen = MediaQuery.of(context).size;
     return Scaffold(
-      backgroundColor: AppColors.auth,
+      backgroundColor: AppColors.ofWhite,
       appBar: AppBar(
         iconTheme: IconThemeData(
           size: 35,
           color: AppColors.black
         ),
         title: Text(
-          'Register',
+          StringsInApp.register,
           style: FontsStyles.bold32Black,
         ),
         centerTitle: true,
@@ -42,7 +44,7 @@ class RegisterScreen extends StatelessWidget {
                     children: [
                       Expanded(
                         child: CustomTextFormField(
-                          hintText: 'First Name',
+                          hintText: StringsInApp.firstName,
                           hintStyle: FontsStyles.regular20Black50,
                           borderColor: AppColors.white,
                           filled: true,
@@ -54,7 +56,7 @@ class RegisterScreen extends StatelessWidget {
                       ),
                       Expanded(
                         child: CustomTextFormField(
-                          hintText: 'Last Name',
+                          hintText: StringsInApp.lastName,
                           hintStyle: FontsStyles.regular20Black50,
                           borderColor: AppColors.white,
                           filled: true,
@@ -67,7 +69,7 @@ class RegisterScreen extends StatelessWidget {
                     height: screen.height * (26 / 778),
                   ),
                   CustomTextFormField(
-                    hintText: 'UserName',
+                    hintText: StringsInApp.username,
                     hintStyle: FontsStyles.regular20Black50,
                     borderColor: AppColors.white,
                     filled: true,
@@ -77,7 +79,7 @@ class RegisterScreen extends StatelessWidget {
                     height: screen.height * (26 / 778),
                   ),
                   CustomTextFormField(
-                    hintText: 'E-Mail',
+                    hintText: StringsInApp.email,
                     hintStyle: FontsStyles.regular20Black50,
                     borderColor: AppColors.white,
                     filled: true,
@@ -87,7 +89,7 @@ class RegisterScreen extends StatelessWidget {
                     height: screen.height * (26 / 778),
                   ),
                   CustomTextFormField(
-                    hintText: 'Password',
+                    hintText: StringsInApp.password,
                     hintStyle: FontsStyles.regular20Black50,
                     borderColor: AppColors.white,
                     filled: true,
@@ -96,11 +98,11 @@ class RegisterScreen extends StatelessWidget {
                   SizedBox(
                     height: screen.height * (33 / 778),
                   ),
-                  CustomCheck(text: 'Couple', onClick: (){}, space: screen.width,filled: false,),
+                  CustomCheck(text: StringsInApp.couple, onClick: (){}, space: screen.width,filled: false,),
                   SizedBox(
                     height: screen.height * (33 / 778),
                   ),
-                  CustomCheck(text: 'vendor', onClick: (){}, space: screen.width,filled: true,),
+                  CustomCheck(text: StringsInApp.vendor, onClick: (){}, space: screen.width,filled: true,),
                   SizedBox(
                     height: screen.height * (33 / 778),
                   ),
@@ -112,10 +114,12 @@ class RegisterScreen extends StatelessWidget {
               child: Column(
                 children: [
                   CustomElevatedButton(
-                    onClick: () {},
+                    onClick: () {
+                      Navigator.pushReplacementNamed(context,RoutesNames.homeScreen);
+                    },
                     padding: screen.height * (12 / 778),
                     borderRadius: 500,
-                    text: 'Register',
+                    text: StringsInApp.register,
                     textStyle: FontsStyles.medium24White,
                     backgroundColor: AppColors.darkGray,
                     center: true,
@@ -125,10 +129,12 @@ class RegisterScreen extends StatelessWidget {
                     height: screen.height * (25 / 778),
                   ),
                   CustomElevatedButton(
-                    onClick: () {},
+                    onClick: () {
+                      Navigator.pushReplacementNamed(context, RoutesNames.homeScreen);
+                    },
                     padding: screen.height * (12 / 778),
                     borderRadius: 500,
-                    text: 'Register With Google',
+                    text: StringsInApp.registerWithGoogle,
                     textStyle: FontsStyles.medium24White,
                     backgroundColor: AppColors.darkGray,
                     center: true,
