@@ -20,6 +20,8 @@ class EditingProfile extends StatelessWidget {
         child: Column(
           children: [
             CustomAppBar(
+              backArrow: true,
+              onBackArrowClick: () {},
               search: false,
               lift: false,
             ),
@@ -37,7 +39,8 @@ class EditingProfile extends StatelessWidget {
                       ),
                       CustomElevatedButton(
                         onClick: () {
-                          Navigator.pushReplacementNamed(context, RoutesNames.homeScreen);
+                          Navigator.pushReplacementNamed(
+                              context, RoutesNames.homeScreen);
                         },
                         text: StringsInApp.save,
                         center: true,
@@ -58,10 +61,9 @@ class EditingProfile extends StatelessWidget {
                     height: screen.height * (15 / 778),
                   ),
                   CustomTextFormField(
-                      hintText: StringsInApp.email,
-                      hintStyle: FontsStyles.regular24Black,
-                      borderColor: AppColors.profile,
-
+                    hintText: StringsInApp.email,
+                    hintStyle: FontsStyles.regular24Black,
+                    borderColor: AppColors.profile,
                   ),
                   SizedBox(
                     height: screen.height * (15 / 778),

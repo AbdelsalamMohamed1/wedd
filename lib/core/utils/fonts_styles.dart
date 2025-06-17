@@ -19,6 +19,10 @@ class FontsStyles {
       fontWeight: FontWeight.w400, fontSize: 24, color: AppColors.black);
   static TextStyle bold25Black = TextStyle(
       fontWeight: FontWeight.w700, fontSize: 25, color: AppColors.black);
+  static TextStyle bold20Black = TextStyle(
+      fontWeight: FontWeight.w700, fontSize: 20, color: AppColors.black);
+  static TextStyle bold20White = TextStyle(
+      fontWeight: FontWeight.w700, fontSize: 20, color: AppColors.white);
   static TextStyle regular12Blue = TextStyle(
       fontWeight: FontWeight.w400,
       fontSize: 12,

@@ -25,6 +25,7 @@ class _HomeScreenState extends State<HomeScreen> {
               height: screen.height * (20 / 778),
             ),
             CustomAppBar(
+              backArrow: false,
                 search: HomeScreenViewModel.index==0,
                 lift: true,
                 textEditingController:

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:wedding_0/Config/routes_names.dart';
+import 'package:wedding_0/features/editing_profile/presentation/pages/editing_profile.dart';
 import 'package:wedding_0/features/home/presentation/pages/home_screen.dart';
 import 'package:wedding_0/features/login/presentation/pages/login_screen.dart';
 import 'package:wedding_0/features/profile/presentation/pages/profile_screen.dart';
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
         RoutesNames.registerScreen:(context)=>RegisterScreen(),
         RoutesNames.homeScreen:(context)=>HomeScreen(),
         RoutesNames.profileScreen:(context)=>ProfileScreen(),
-
+        RoutesNames.editingProfile:(context)=>EditingProfile(),
       },
       initialRoute: RoutesNames.loginScreen,
     );

@@ -32,4 +32,5 @@ class StringsInApp {
   static String username='Username';
   static String weddingCake='Wedding Cake';
   static String reservations='Reservations';
+  static String logout='Logout';
 }

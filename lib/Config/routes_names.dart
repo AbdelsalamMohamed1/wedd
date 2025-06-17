@@ -3,4 +3,5 @@ class RoutesNames {
   static String registerScreen='registerScreen';
   static String homeScreen='homeScreen';
   static String profileScreen='profileScreen';
+  static String editingProfile='editingProfile';
 }
