@@ -125,21 +125,6 @@ class RegisterScreen extends StatelessWidget {
                     center: true,
                     borderColor: AppColors.darkGray,
                   ),
-                  SizedBox(
-                    height: screen.height * (25 / 778),
-                  ),
-                  CustomElevatedButton(
-                    onClick: () {
-                      Navigator.pushReplacementNamed(context, RoutesNames.homeScreen);
-                    },
-                    padding: screen.height * (12 / 778),
-                    borderRadius: 500,
-                    text: StringsInApp.registerWithGoogle,
-                    textStyle: FontsStyles.medium24White,
-                    backgroundColor: AppColors.darkGray,
-                    center: true,
-                    borderColor: AppColors.darkGray,
-                  ),
                 ],
               ),
             )

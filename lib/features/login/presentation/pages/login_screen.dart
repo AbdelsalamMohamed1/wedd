@@ -86,21 +86,6 @@ class LoginScreen extends StatelessWidget {
                     borderColor: AppColors.darkGray,
                   ),
                   SizedBox(
-                    height: screen.height * (25 / 778),
-                  ),
-                  CustomElevatedButton(
-                    onClick: () {
-                      Navigator.pushReplacementNamed(context, RoutesNames.homeScreen);
-                    },
-                    padding: screen.height * (12 / 778),
-                    borderRadius: 500,
-                    text: StringsInApp.loginWithGoogle,
-                    textStyle: FontsStyles.medium24White,
-                    backgroundColor: AppColors.darkGray,
-                    center: true,
-                    borderColor: AppColors.darkGray,
-                  ),
-                  SizedBox(
                     height: screen.height * (30 / 778),
                   ),
                   Text(
